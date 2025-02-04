@@ -1,0 +1,74 @@
+body {
+    background-color: #183E07; /* Harrods Green */
+    color: #ffffff; /* Harrods Black */
+    font-family: "Aptos Narrow", sans-serif;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #e0b25c; /* Harrods Gold */
+    color: #000000;
+    font-size: 16px;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 8px; /* Rounded edges */
+}
+
+button.locked {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.task-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(5, 49, 9);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    z-index: 10;
+    border-radius: 4px; /* Rounded edges */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+/* Button-like styling for links */
+.button {
+    display: inline-block;
+    background-color: #C1A65C; /* Harrods Gold */
+    color: black;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none; /* Remove underline */
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #b09550; /* Slightly darker gold */
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cover Page -->
+    <div id="cover-page" class="page">
+        <span style="color: #e0b25c;"><h1>Roadmap</h1></span>
+        <h2>Contemporary x International</h2>
+        <button onclick="showPage('intro-page')">Start</button>
+    </div>
+
+    <!-- Introduction Page -->
+    <div id="intro-page" class="page hidden">
+        <h1><span style="color: #e0b25c;">Purpose</span></h1>
+        <p style="text-align: left;">
+            <span style="color: #e0b25c;"><b>• Networking:</b> </span> rapport with new colleagues.<br><br>
+            <span style="color: #e0b25c;"><b>• Learning:</b> </span> other brands and department operations.<br><br>
+            <span style="color: #e0b25c;"><b>• Increase your sales by cross-selling:</b> </span> how products from other <br> departments can complement your primary department's offerings.
+          </p>
+        <button onclick="showPage('home-page')">Continue</button>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page hidden">
+        <h1>Roadmap</h1>
+        <button id="phase1-btn">Phase 1</button>
+        <button id="phase2-btn" class="locked">Phase 2</button>
+        <button id="phase3-btn" class="locked">Phase 3</button>
+        <button id="phase4-btn" class="locked">Phase 4</button>
+    </div>
+
+    <!-- Task Windows -->
+    <div id="phase1-window" class="task-window hidden">
+        <h2><span style="color: #e0b25c;">Arrival & Introduction (Start of Shift)</span></h2><br>
+        <label><input type="checkbox"> Check-in with a Retail Manager</label><br><br>
+        <label><input type="checkbox"> Introduce yourself to the team member and get to know as many team members as possible</label><br><br>
+        <label><input type="checkbox"> Ask a team member to give you a brief floor walk of the department including stockrooms</label><br><br>
+        <button id="phase1-next" class="locked">Next</button>
+        <button onclick="closeTaskWindow('phase1-window', 'phase1-btn')">Return</button>
+    </div>
+
+    <div id="phase2-window" class="task-window hidden">
+        <h2><span style="color: #e0b25c;">Learning the Department (Morning Activity)</span></h2><br><br>
+        <label><input type="checkbox"> Familiarise yourself with the all the brands 1 by 1 </label><br><br>
+        <label><input type="checkbox"> Learn in depth about 4-5 key brands or product features you can easily reference</label><br><br>
+        <label><input type="checkbox"> Understand any current promotions, seasonal trends, or selling incentives</label><br><br>
+        <label><input type="checkbox"> Identify the best-selling items and high-traffic areas you can achieve that by asking your colleagues</label><br><br>
+        <label><input type="checkbox"> Ask brand representatives if they can share with you their brand knowledge materials so you can go through them</label><br><br>
+        <label><input type="checkbox"> Ask as many questions as possible</label><br><br>
+        <button id="phase2-next" class="locked">Next</button>
+        <button onclick="closeTaskWindow('phase2-window', 'phase2-btn')">Return</button>
+    </div>
+
+    <div id="phase3-window" class="task-window hidden">
+        <h2><span style="color: #e0b25c;">Customer Engagement (Midday Activity)</span></h2><br>
+        <label><input type="checkbox"> Shadow a team member to observe how they interact with customers in this department</label><br><br>
+        <label><input type="checkbox"> Start assisting customers, focusing on: <br><br> •	How this department products might pair with those from your home department <br><br>
+            •	Providing a fresh perspective or style suggestions.
+            </label><br><br>
+        <button id="phase3-next" class="locked">Next</button>
+        <button onclick="closeTaskWindow('phase3-window', 'phase3-btn')">Return</button>
+    </div>
+
+    <div id="phase4-window" class="task-window hidden">
+        <h2><span style="color: #e0b25c;">Networking & Asking Questions (Throughout the Day)</span></h2><br><br>
+        <label><input type="checkbox"> Take opportunities to ask team members about their experiences in the department</label><br><br>
+        <label><input type="checkbox"> Seek advice on selling techniques specific to their products or clientele</label><br><br>
+        <button id="phase4-next" class="locked">Continue</button>
+        <button onclick="closeTaskWindow('phase4-window', 'phase4-btn')">Return</button>
+    </div>
+
+    <!-- Congratulations Page -->
+    <div id="congrats-page" class="page hidden">
+        <h1><span style="color: #e0b25c;">Contemporary x International</span></h1>
+        <h2>Congratulations! You have made it through the day</h2>
+        <p><span style="color: #e0b25c;">Please submit your feedback</span></p>
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=4GYXcIVXCE6WnYe7zg01ay1AGZS0QDhFltmAR_oUlzhUQlhFWEtRTUxHRVVJQTA2Qkg1TUg0R1ZPTC4u&route=shorturl" class="btn" style="color: white;">Feedback</a><br>
+        <a href="file:///C:/Users/th166715/OneDrive%20-%20Harrods%20Ltd/Desktop/Tasks/Contemporary%20x%20International%20Staff%20Swap/Collaboration%20Roadmap.pdf" download class="btn" style="color: white;">Download Roadmap</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
